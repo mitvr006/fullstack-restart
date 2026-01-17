@@ -14,15 +14,28 @@ let count = 0;
 // elements
 const btn = document.getElementById("btn");
 const text = document.getElementById("text");
+const nameInput = document.getElementById("nameInput");
 
-// function
-function increaseCount() {
-  count = count + 1;
-  text.innerText = "Button " + count + " bar click hua";
-  //text.innerText = text.innerText.toUpperCase();
+btn.onclick = function () {
+  const name = nameInput.value;
 
-}
+  if (name === "") {
+    text.innerText = "Pehle naam likho";
+  } else {
+    count = count + 1;
+    text.innerText = "Hello " + name + 
+      " | Button " + count + " bar click hua";
+  }
+};
 
-// event
-btn.onclick = increaseCount;
+// // function
+// function increaseCount() {
+//   count = count + 1;
+//   text.innerText = "Button " + count + " bar click hua";
+//   //text.innerText = text.innerText.toUpperCase();
+
+// }
+
+// // event
+// btn.onclick = increaseCount;
 
