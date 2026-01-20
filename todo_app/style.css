@@ -25,4 +25,16 @@ button:hover {
   opacity: 0.8;
 }
 
+body {
+  background: #eef2f3;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input, button {
+  border-radius: 5px;
+}
+
 
