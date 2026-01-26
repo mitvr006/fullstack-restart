@@ -1,0 +1,15 @@
+Q1️⃣ let vs var
+var function scoped
+let block scoped
+
+Q2️⃣ What is DOM?
+HTML ko JS se control karna
+
+Q3️⃣ What is API?
+Data dene wali service
+
+Q4️⃣ localStorage kya hai?
+Browser me data save karna
+
+Q5️⃣ === vs ==
+=== type bhi check karta
