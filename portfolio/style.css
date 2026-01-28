@@ -1,24 +1,81 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  box-sizing: border-box;
 }
 
-header {
-  background: #222;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-
-section {
-  padding: 30px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
-}
-
-h2 {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
   color: #333;
 }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+}
+
+.navbar .logo {
+  color: #00e5ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #00e5ff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  background: white;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+/* Skills */
+#skills ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  background: #eee;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
