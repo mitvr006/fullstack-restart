@@ -79,3 +79,19 @@ section {
   }
 }
 
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
