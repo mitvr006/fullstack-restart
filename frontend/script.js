@@ -1,41 +1,23 @@
-// const btn = document.getElementById("btn");
-// const text = document.getElementById("text");
-
-// btn.onclick = function () {
-//   text.innerText = "Button Click Ho Gaya!";
-//   text.style.color = "green";
-
-// };
-
-
-// variables
-let count = 0;
-
-// elements
-const btn = document.getElementById("btn");
-const text = document.getElementById("text");
-const nameInput = document.getElementById("nameInput");
-
-btn.onclick = function () {
-  const name = nameInput.value;
-
-  if (name === "") {
-    text.innerText = "Pehle naam likho";
+document.getElementById("btn").addEventListener("click", function() {
+  let name = document.getElementById("nameInput").value;
+  
+  if(name === "") {
+    document.getElementById("text").innerText = "Pehle naam likho";
   } else {
-    count = count + 1;
-    text.innerText = "Hello " + name + 
-      " | Button " + count + " bar click hua";
+    document.getElementById("text").innerText = "Hello " + name ;
   }
-};
+});
 
-// // function
-// function increaseCount() {
-//   count = count + 1;
-//   text.innerText = "Button " + count + " bar click hua";
-//   //text.innerText = text.innerText.toUpperCase();
+document.body.style.backgroundColor = "lightblue";
 
-// }
+let time = new Date().toLocaleTimeString();
+document.getElementById("text").innerText = time;
 
-// // event
-// btn.onclick = increaseCount;
+let messages = [
+  "Aaj kuch naya karo ",
+  "Consistency hi success hai ",
+  "Kabhi give up mat karo "
+];
 
+let random = messages[Math.floor(Math.random() * messages.length)];
+document.getElementById("text").innerText = random;
