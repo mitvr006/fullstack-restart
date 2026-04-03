@@ -21,3 +21,24 @@ let messages = [
 
 let random = messages[Math.floor(Math.random() * messages.length)];
 document.getElementById("text").innerText = random;
+
+
+document.getElementById("mood").addEventListener("change", function(){
+  let mood = this.value;
+
+  if(mood === "happy"){
+    document.body.style.background = "yellow";
+    text.innerText = "Keep smiling 😄";
+  }
+  else if(mood === "sad"){
+    document.body.style.background = "lightblue";
+    text.innerText = "Sab thik ho jayega 💙";
+  }
+});
+
+let goal = document.getElementById("nameInput").value;
+
+let li = document.createElement("li");
+li.innerText = goal;
+
+document.body.appendChild(li);
