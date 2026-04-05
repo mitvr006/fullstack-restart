@@ -28,11 +28,11 @@ document.getElementById("mood").addEventListener("change", function(){
 
   if(mood === "happy"){
     document.body.style.background = "yellow";
-    text.innerText = "Keep smiling 😄";
+    text.innerText = "Keep smiling ";
   }
   else if(mood === "sad"){
     document.body.style.background = "lightblue";
-    text.innerText = "Sab thik ho jayega 💙";
+    text.innerText = "Sab thik ho jayega ";
   }
 });
 
